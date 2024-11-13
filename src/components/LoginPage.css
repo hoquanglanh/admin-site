@@ -1,0 +1,129 @@
+.login-container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(45deg, #1DB954, #191414);
+}
+
+.login-box {
+  background: rgba(25, 20, 20, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  max-width: 400px;
+  width: 90%;
+  padding: 2.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.login-box h2 {
+  text-align: center;
+  color: #1DB954;
+  font-size: 32px;
+  margin-bottom: 2.2rem;
+  font-weight: 600;
+}
+
+.form-group label {
+  color: #B3B3B3;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 1rem 0.6rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #1DB954;
+  box-shadow: 0 0 0 4px rgba(29, 185, 84, 0.3);
+}
+
+.login-button {
+  background: #1DB954;
+  color: #fff;
+  padding: 1rem 1.6rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1.2rem;
+}
+
+.login-button:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(29, 185, 84, 0.4);
+}
+
+.login-button:active:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.login-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.login-button.loading {
+  position: relative;
+  color: transparent;
+}
+
+.login-button.loading::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 50%;
+  left: 50%;
+  margin: -11px 0 0 -11px;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  border-top-color: #1DB954;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.forgot-password a {
+  color: #1DB954;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.forgot-password a:hover {
+  color: #43D067;
+  text-decoration: underline;
+}
+
+.signup-link p {
+  color: #B3B3B3;
+  font-size: 0.95rem;
+}
+
+.signup-link a {
+  color: #1DB954;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+  color: #43D067;
+  text-decoration: underline;
+}
